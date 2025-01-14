@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    background: aqua;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    padding: 10px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.body {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    background: cornsilk;
+}
