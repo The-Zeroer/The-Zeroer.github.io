@@ -1,0 +1,80 @@
+<!-- HTML 部分 -->
+<div class="header-logo">
+    <h1>TalkHub</h1>
+    <a href="index.html" title="返回TalkHub首页"></a>
+</div>
+<div class="header-nav">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="download.html">下载</a></li>
+        <li><a href="help.html">帮助</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="other.html">其他</a></li>
+    </ul>
+</div>
+
+<!-- CSS 部分 -->
+<style>
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        background-color: #333;
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+        transition: transform 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+    }
+    .header.hidden {
+        transform: translateY(-100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    .header a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-logo {
+        width: 150px;
+        height: 60px;
+        margin-left: 30px;
+        background: transparent url("./images/logo.png") no-repeat center;
+        background-size: contain;
+        font-size: 0;
+    }
+
+    .header-nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        margin-right: 60px;
+    }
+    .header-nav li {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+    }
+    .header-nav a {
+        text-align: center;
+        line-height: 50px;
+        background: cornsilk;
+        color: black;
+        border: 0;
+        border-radius: 15px;
+    }
+    .header-nav a:hover {
+        background-color: aquamarine;
+        color: white;
+    }
+    .header-nav .active {
+        background-color: cornflowerblue;
+    }
+</style>

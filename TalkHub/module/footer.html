@@ -1,0 +1,46 @@
+<!-- HTML 部分 -->
+<div class="footer-nav">
+</div>
+<hr>
+<div class="footer-copyright">
+    <p>Copyright © 2025 TalkHub. All Rights Reserved</p>
+</div>
+<button class="back-to-top" id="backToTop">↑</button>
+
+<!-- CSS 部分 -->
+<style>
+    .footer {
+        background: cornsilk;
+    }
+    .footer-copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
+    .back-to-top {
+        position: fixed;
+        z-index: 1000;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        font-size: 18px;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .back-to-top.show {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
